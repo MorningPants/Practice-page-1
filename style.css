@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Red Hat Display", sans-serif;
+  vertical-align: baseline;
+  overflow-x: hidden;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100vw;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.background {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #e0e8ff;
+  padding-bottom: 50vh;
+}
+@media screen and (min-width: 700px) {
+  .background {
+    content: url("images/pattern-background-desktop.svg");
+  }
+}
+@media screen and (max-width: 699px) {
+  .background {
+    content: url("images/pattern-background-mobile.svg");
+  }
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-height: 650px) {
+  .container {
+    align-items: flex-start;
+  }
+}
+.popup {
+  max-width: 400px;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 20px 10px -10px #cbd0e6;
+  animation-duration: 4s;
+  animation-name: sizeup;
+}
+
+.heroImg {
+  width: 400px;
+  margin-bottom: 15px;
+  animation-duration: 4s;
+  animation-name: fadeOne;
+}
+.popup > h2 {
+  animation-duration: 4s;
+  animation-name: fadeTwo;
+}
+
+.popup > p {
+  animation-duration: 4s;
+  animation-name: fadeThree;
+}
+
+.popup > div {
+  animation-duration: 4s;
+  animation-name: fadeFour;
+}
+
+.popup > a {
+  animation-duration: 4s;
+  animation-name: fadeFive;
+}
+
+@keyframes fadeOne {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeTwo {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeThree {
+  from {
+    opacity: 0;
+  }
+  38% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeFour {
+  from {
+    opacity: 0;
+  }
+  58% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeFive {
+  from {
+    opacity: 0;
+  }
+  72% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes sizeup {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  10% {
+    width: 500px;
+    height: 10px;
+  }
+  10% {
+    width: 400px;
+    height: 10px;
+  }
+
+  21% {
+    width: 400px;
+    height: 600px;
+  }
+
+  to {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+h2,
+h4,
+p {
+  margin: 15px;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+p {
+  color: #85859f;
+  max-width: 275px;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.plan {
+  display: flex;
+  width: 295px;
+  background-color: #f8f9fe;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.icon {
+  height: 48px;
+  width: 48px;
+  margin: 18px;
+}
+
+.left {
+  text-align: left;
+  margin-left: 0;
+}
+
+.change {
+  flex-grow: 1;
+  text-align: right;
+  margin: 15px;
+}
+
+.change:hover {
+  color: #726bcb;
+  text-decoration: none;
+}
+
+.button1,
+.button2 {
+  padding: 12px;
+  margin: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button1 {
+  width: 75%;
+  background-color: #382ae1;
+  box-shadow: 0 20px 10px -10px #cbd0e6;
+  border-radius: 10px;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #766cf1;
+}
+
+.button2 {
+  margin-top: 0;
+  color: #737d98;
+}
+.button2:hover {
+  color: black;
+}
