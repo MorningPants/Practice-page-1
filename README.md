@@ -20,14 +20,14 @@ Added flair:
 
 - Animated appearance
 
-### Screenshot
+### Page
 
-![](./images/screenshot.jpg)
+View the project at https://morningpants.github.io/order-summary/
 
 
 ### Continued development
 
-I want to continue to improve on making smooth animations.
+I want to continue to improve on making smooth animations.  I'm also interested in learning how to build Parallax websites.
 
 ## Author
 
