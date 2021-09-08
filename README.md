@@ -22,7 +22,7 @@ Added flair:
 
 ### Page
 
-View the project at https://morningpants.github.io/order-summary/
+View the project at https://morningpants.github.io/Practice-page-1/
 
 
 ### Continued development
